@@ -1,0 +1,76 @@
+@import url('https://fonts.cdnfonts.com/css/digital-numbers');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@700&family=Poppins:wght@500&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  background: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.calculator {
+  width: 300px;
+  background-color: #000;
+  border-radius: 20px;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.screen {
+  background-color: #222;
+  color: #0f0;
+  height: 60px;
+  font-size: 38px;
+  text-align: right;
+  padding: 10px 15px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  font-family: 'Digital Numbers', sans-serif;
+  overflow-x: auto;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+}
+
+button {
+  height: 60px;
+  font-size: 24px;
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-family: 'Poppins', sans-serif;
+}
+
+button.back{
+  height: 60px;
+  font-size: 30px;
+  font-weight: bolder;
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-family: 'Poppins', sans-serif;
+}
+
+button:active {
+  background-color: #444;
+}
+
+.clear {
+  background-color: #d32f2f;
+  color: white;
+}
+
+.equal {
+  background-color: #2e7d32;
+  color: white;
+}
